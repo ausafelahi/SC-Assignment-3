@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Categories</title>
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="product.css">
+    
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    
+    <!-- NAVBAR STARTED  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h4 class="clinic-heading">AquaFloss Dental Clinic.</h4>
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="patient1.html">PATIENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="research1.html">RESEARCH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- NAVBAR ENDED  -->
+
+
+
+
+    <!-- Top Menu -->
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="#toothpastes">Toothpastes</a></li>
+                <li><a href="#brushes">Tooth Brushes</a></li>
+                <li><a href="#kids-products">Kids' Products</a></li>
+                <li><a href="#electronic-accessories">Electronic Accessories</a></li>
+                <li>
+                    <a href="#cart" id="view-cart">
+                        <img src="./productImages/cart-icon.jpg" alt="" style="width: 20px; vertical-align: middle;"> 
+                        View Cart (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="cart" style="display: none;">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="total-cost"></div>
+            <button id="close-cart">Close Cart</button>
+        </div>
+
+        <!-- Toothpastes Section -->
+        <section class="category-section" id="toothpastes">
+            <h2>Toothpastes</h2>
+            <div class="product-row">
+                <!-- Product Cards for Toothpastes -->
+                <div class="product-card">
+                    <img src="./productImages/paste 1.avif" alt="Toothpaste 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Toothpaste</h3>
+                        <p class="product-description">Oral B Densify Gentle Whitening Toothpaste 75ml</p>
+                        <span class="product-price">$4.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/paste2.avif" alt="Toothpaste 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Fresh Mint Toothpaste</h3>
+                        <p class="product-description">Oral B Densify Gentle Whitening Toothpaste 75ml</p>
+                        <span class="product-price">$6.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/paste3.avif" alt="Toothpaste 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Fresh Mint Toothpaste</h3>
+                        <p class="product-description">Oral B Pro-Expert Advanced Science Deep Clean Toothpaste 75ml</p>
+                        <span class="product-price">$9.29</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/paste5.jpg" alt="Toothpaste 4" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Sensodyne</h3>
+                        <p class="product-description">Sensodyne Original Toothpaste, 70g More</p>
+                        <span class="product-price">$11.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tooth Brushes Section -->
+        <section class="category-section" id="brushes">
+            <h2>Tooth Brushes</h2>
+            <div class="product-row">
+                <div class="product-card">
+                    <img src="./productImages/boombo.png" alt="Brush 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Boombo brush</h3>
+                        <p class="product-description">Gentle on gums and effective for cleaning.</p>
+                        <span class="product-price">$3.49</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/brush1.jpg" alt="Brush 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Sensodyne</h3>
+                        <p class="product-description">Sensodyne Multi Care Tooth Brush, Medium</p>
+                        <span class="product-price">$9.49</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/brush2.avif" alt="Brush 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Soft Bristle Brush</h3>
+                        <p class="product-description">Oral B CrossAction Black Toothbrush Head - Pack of 10 Counts</p>
+                        <span class="product-price">$8.65</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/brush4.webp" alt="Brush 4" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Soft Bristle Brush</h3>
+                        <p class="product-description">Colgate Zig Zag Toothbrush - Soft & More</p>
+                        <span class="product-price">$6.09</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids' Products Section -->
+        <section class="category-section" id="kids-products">
+            <h2>Kids' Products</h2>
+            <div class="product-row">
+                <div class="product-card">
+                    <img src="./productImages/kids2.avif" alt="Kids Toothpaste 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Oral B</h3>
+                        <p class="product-description">Oral B Kids Electric Toothbrush Spiderman Giftset - Vitality PRO</p>
+                        <span class="product-price">$3.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/kids4.avif" alt="Kids Product 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Cetaphil 2 Piece Set</h3>
+                        <p class="product-description">Cetaphil, Baby, Healthy Skin Essentials Set, 13.5 fl oz (399 ml) Each</p>
+                        <span class="product-price">$15.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/kids5.webp" alt="Kids Toothpaste 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Sensodyne</h3>
+                        <p class="product-description">Sensodyne For Kids Toothpaste 6-12 Years 50g</p>
+                        <span class="product-price">$30.00</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/kids6.webp" alt="Kids Product 4" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Nine-piece baby toiletries set</h3>
+                        <p class="product-description">Newborn baby supplies, baby wash product and baby skin care gift box</p>
+                        <span class="product-price">$19.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electronic Accessories Section -->
+        <section class="category-section" id="electronic-accessories">
+            <h2>Electronic Accessories</h2>
+            <div class="product-row">
+                <div class="product-card">
+                    <img src="./productImages/oral b brush.jpg" alt="Electronic Accessory 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Oral-B Pro</h3>
+                        <p class="product-description">Oral-B Pro 1000 Rechargeable Electric Toothbrush, White color for teeth cleaning.</p>
+                        <span class="product-price">$12.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/acc1.webp" alt="Electronic Accessory 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Electric Toothbrush</h3>
+                        <p class="product-description">Smart Electric Toothbrush, Portable USB Rechargeable.</p>
+                        <span class="product-price">$150.00</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/acc2.webp" alt="Electronic Accessory 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Dental Treatment Chair</h3>
+                        <p class="product-description">High Quality Cart Type Electric Orthodontic Luxury Dental Chair Unit machine.</p>
+                        <span class="product-price">$1100.00</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./productImages/acc3.webp" alt="Electronic Accessory 4" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">YP Mobile Dental X-ray Wall</h3>
+                        <p class="product-description">Mounted X-ray Machine dental 360-degree panoramic X-ray machine</p>
+                        <span class="product-price">$1790.99</span>
+                        <button class="btn btn-primary add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+  <!-- FOOTER STARTED  -->
+   
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>AQUA FLOSS DENTAL CLINIC.</h5>
+                <p>
+                A dental clinic provides essential oral health care services, from routine cleanings to complex procedures like root canals. While clinics offer professional treatment and modern equipment, they may have higher costs and longer wait times, depending on location and demand.</p>
+                  
+                <div class="opening-hours">
+                  <i id="clock" class="fa-solid fa-clock"></i>
+                    Monday - Saturday: 9:00am - 10:00pm
+                </div>
+            </div>
+  
+            <!-- Other Links -->
+            <div  class=" col-md-3">
+                <h5 class="others">Other Links</h5>
+                <ul class="links list-unstyled">
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="index.html">Home</a></li>
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="course.html">Professional-Education</a></li>
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="patient1.html">Patient</a></li>
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="product.html">Product</a></li>
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="research1.html">Research</a></li>
+                    <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+  
+            <!-- Our Services -->
+            <div class="col-md-3">
+                <h5>Our Services</h5>
+                <ul class="list-unstyled">
+                    <li> <i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Root Canal</a></li>
+                    <li><i class="fa-solid fa-folder-plus"></i><a class="ankor"  href="#">Alignment Teeth</a></li>
+                    <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Cosmetic Teeth</a></li>
+                    <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Oral Hygiene</a></li>
+                    <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Live Advisory</a></li>
+                    <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Cavity Inspection</a></li>
+                </ul>
+            </div>
+  
+            <!-- Contact Us -->
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p><i id="location" class="fa-solid fa-location-dot"></i> 1247/Plot No. 39, 15th Phase</p>
+                <p><i id="phone" class="fa-solid fa-phone"></i> +111-222-333-444</p>
+                <p><i id="envelope" class="fa-solid fa-envelope"></i> Abc@example.com</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+  
+        <hr  />
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="social-icons">
+                    <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i id="insta" class="fab fa-instagram"></i></a>
+                    <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="copyright">&copy; 2024 All Rights Reserved by AquaFloss Dental</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  
+  <!-- FOOTER ENDED  -->
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
