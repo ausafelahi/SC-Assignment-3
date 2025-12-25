@@ -1,9 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+<title>HOME PAGE</title>
+</head>
+<body class="bg-light">
+
+
+    <!-- APPOINTMENT SECTION STARTED  -->
+     
+<div class="container">
+    <div class="row">
+        <div class="Schedule col-12 appointment-container">
+            <!-- Calendar Icon and Text -->
+            <span>
+                <i class="fa-solid fa-calendar-check"></i>
+                <strong class="text">Schedule an Appointment</strong> — or — 
+                <!-- Phone Icon and Phone Number -->
+                <i class="fa-solid fa-phone"></i> 
+                <strong class="text">Call Now</strong> 
+                <span class="text">111-222-333-444</span>
+            </span>
+        </div>
+    </div>
+    <hr class="text-hr" />
+</div>
+
+
+    <!-- APPOINTMENT SECTION ENDED  -->
+
+    <!-- NAVBAR STARTED  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h4 class="clinic-heading">AquaFloss Dental Clinic.</h4>
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+           
+               
+            <li class="nav-item">
+              <a class="nav-link" href="patient1.html">PATIENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research1.html">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  <!-- NAVBAR ENDED  -->
+
+
+
+
+
+    <!-- SLIDER STARTED  -->
+
+  <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <!-- Slider 1 -->
+      <div class="carousel-item active">
+        <center><img id="img1"  src="./assest/slider.1.jpg" class=" d-block w-100 "  alt="Slide 1"></center>
+      </div>
+      
+      <!-- Slider 2 -->
+      <div class="carousel-item">
+        <center><img id="img2" src="./assest/slider.4.webp" class=" d-block w-100"  alt="Slide 2"></center>
+      </div>
+      
+      <!-- Slider 3 -->
+      <div class="carousel-item">
+        <center><img id="img3" src="./assest/slider.3.jpg" class=" d-block w-100"   alt="Slide 3"></center>
+      </div>
+    </div>
+    
+    <!-- ICONS -->
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+      <span  id="slide1" class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span  class=" visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+      <span id="slide2" class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span  class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- SLIDER ENDED  -->
+
+
+  <!-- CARD STARTED  -->
+
+
+<div class="container py-5">
+    <div class="row text-center">
+      <!-- Card 1: Root Canal -->
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="icon mb-3">
+              <i class="fas fa-tooth"></i>
+            </div>
+            <h5 class="card-title">Root Canal</h5>
+            <p class="card-text">Microscopes used during Root Canals </p>
+          </div>
+          <button class="card-btn btn btn-primary">More</button>
+        </div>
+      </div>
+  
+      <!-- Card 2: Implants -->
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="icon mb-3">
+              <i class="fas fa-syringe"></i>
+            </div>
+            <h5 class="card-title">Implants</h5>
+            <p class="card-text">We are the pioneers of Implant placement</p>
+          </div>
+          <button class="card-btn btn btn-primary">More</button>
+        </div>
+      </div>
+  
+      <!-- Card 3: Invisible Aligners -->
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="icon mb-3">
+            <i class="fa-solid fa-teeth"></i>
+            </div>
+            <h5 class="card-title">Invisible Aligners</h5>
+            <p class="card-text">Perfectly straight teeth, with transparent Aligner</p>
+          </div>
+          <button class="card-btn btn btn-primary">More</button>
+        </div>
+      </div>
+  
+      <!-- Card 4: Smile Makeover -->
+       
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="icon mb-3">
+            <i class="fa-solid fa-teeth-open"></i>
+            </div>
+            <h5 class="card-title">Smile Makeover</h5>
+            <p class="card-text">Cosmetic Smile Makeover of your discolored teeth</p>
+          </div>
+          <button class="card-btn btn btn-primary">More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CARD ENDED  -->
+
+
+  <!-- MIDDLE SECTION AREA STARTED  -->
+
+
+  <section class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome To AquaFloss Dental</h1>
+            <p>We’ve built a long-standing relationship based on trust to become the Leading Dentist in Karachi.</p>
+            <p>Are you in search of the best dentist in Karachi Near You? Look no further! AquaFloss Dental stands as a beacon of dental excellence, dedicated to providing unparalleled oral care in the heart of Karachi.</p>
+
+            <h3>Why Choose AquaFloss Dental?</h3>
+            <p>At AquaFloss Dental, we pride ourselves on being more than just a dental clinic – we are your partners in achieving your oral health. Our team of highly skilled and experienced dentists is committed to delivering personalized dental solutions tailored to meet your needs. AquaFloss Dental provides a full range of cosmetic and all types of essential dental treatments in a clean, relaxed atmosphere delivered to the highest standard of care, using the cutting-edge technology, by some of the most qualified team of dentists all across in Pakistan with decades of experience Best Dentists in Karachi & Pakistan</p>
+
+            <p>Dental treatments include <span class="highlight">1-hour teeth whitening, porcelain veneers, metal-free crowns and bridges, dental implants, white fillings</span> and much more. We’re the only practice in Pakistan using <span class="highlight">Root Canal Microscopes and 3D scanning, CBCT technology</span> combined with digital radiography to provide every digital technology available worldwide right here in Pakistan, the very best for our patients.</p>
+
+            <h4>Patient-Centric Approach</h4>
+            <p>Your comfort and well-being are our top priorities. At AquaFloss Dental, we aim to create a warm and welcoming environment where you can feel at ease. Our patient-centric approach along with our commitment to the highest standards of hygiene ensures a positive and stress-free dental experience.</p>
+
+            <a href="#" class="btn btn-primary mt-3">Get A Free Online Consultation Today</a>
+        </div>
+        <div class="col-md-4">
+            <div class="schedule-appointment text-center">
+                <img src="./assest/dental middle.jpg" class="img-fluid" alt="Dental Clinic Image">
+                <a href="#" class="btn btn-primary mt-3">Schedule An Appointment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- MIDDLE SECTION AREA ENDED  -->
+    
+
+
+
+  <!-- LOCATION SECTION STARTED  -->
+
+
+  <section class="container text-center mt-5">
+    <h2>Three Convenient Locations Across Karachi</h2>
+    <div class="row justify-content-center mt-4">
+
+        <!-- Location 1 -->
+        <div class="col-md-4">
+            <div class="card location-card">
+                <img src="./assest/image 1 card.jpeg" class="card-img-top" alt="Gulshan-e-Johar Karachi">
+                <div class="card-body">
+                    <p class="location-name">Gulshan-e-Johar Karachi</p>
+                </div>
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+
+        <!-- Location 2 -->
+        <div class="col-md-4">
+            <div class="card location-card">
+                <img src="./assest/image 2 card.jpeg" class="card-img-top" alt="DHA-Islamabad">
+                <div class="card-body">
+                    <p class="location-name">DHA-Islamabad</p>
+                </div>
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+
+        <!-- Location 3 -->
+        <div class="col-md-4">
+            <div class="card location-card">
+                <img src="./assest/image 3 card.jpeg" class="card-img-top" alt="Lahore">
+                <div class="card-body">
+                    <p class="location-name">Lahore Bahria Town</p>
+                </div>
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- LOCATION SECTION ENDED  -->
+
+
+
+
+  <!-- FEATURED SECTION STARTED  -->
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h6 class="services-title">OUR SERVICES</h6>
+            <h2 class="services-subtitle">What We Provide</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <i class="icon fas fa-tooth"></i>
+                  <h5 class="card-title">Root Canal</h5>
+                  <p class="card-text">A root canal is a dental procedure used to treat infection or damage in the tooth so create infection.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <i class="icon fas fa-teeth"></i>
+                  <h5 class="card-title">Cosmetic Teeth</h5>
+                  <p class="card-text"> Cosmetic teeth treatments enhance the appearance of teeth through procedures like whitening.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <i class="icon fas fa-tooth"></i>
+                  <h5 class="card-title">Live Advisory</h5>
+                  <p class="card-text">A live advisory provides real-time guidance or updates on specific situations.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                <i class="icon fas fa-user-md"></i>
+                  <h5 class="card-title">Oral Hygiene</h5>
+                  <p class="card-text">Oral hygiene involves regularly brushing and flossing to maintain healthy teeth and gums.</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <i class="icon fas fa-tooth"></i>
+                  <h5 class="card-title">Alignment Teeth</h5>
+                  <p class="card-text">
+                    Teeth alignment treatments, such as braces or clear aligners, straighten and correct the positioning of teeth.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <i class="icon fas fa-tooth"></i>
+                  <h5 class="card-title">Cavity Inspection</h5>
+                  <p class="card-text">
+                    Cavity inspection involves examining the teeth for signs of decay, often using dental tools.</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+
+  <!-- FEATURED SECTION ENDED  -->
+
+  <!-- REVIEW SECTION STARTED  -->
+
+  <div class="container mt-5">
+    <div class="text-left">
+      <h5><i id="review" class="fa-brands fa-google"></i> Our Google Reviews</h5>
+      <hr id="hrs">
+    </div>
+
+    <div class="review-box">
+      <div class="review-title">AquaFloss Dental</div>
+      <div class="review-rating">
+        4.8
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <div class="powered-by"><img src="./assest/powered_by_google_on_white.png" alt="google"></div>
+    </div>
+
+    <div class="review-box">
+      <div class="review-title">AquaFloss Dental</div>
+      <div class="review-rating">
+        4.7
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <div class="">Based on 311 reviews</div>
+    </div>
+  </div>
+
+
+  <!-- REVIEW SECTION ENDED  -->
+
+  <!-- DOCTOR IMAGE SECTION STARTED  -->
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h6 class="services-title">OUR DOCTOR</h6>
+            <h2 class="services-subtitle">Best Expert Dentist</h2>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- DENTIST 1  -->
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card text-center">
+        <img src="./assest/doctor-1.png" class="card-img-top" alt="Howard Holmes">
+        <div class="card-body">
+          <h5 class="card-title">Howard Holmes</h5>
+          <p class="card-text">Dentist</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DENTIST 2  -->
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card text-center">
+        <img src="./assest/doctor-2.png" class="card-img-top" alt="Ella Thompson">
+        <div class="card-body">
+          <h5 class="card-title">Ella Thompson</h5>
+          <p class="card-text">Dentist</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DENTIST 3  -->
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card text-center">
+        <img src="./assest/doctor-3.png" class="card-img-top" alt="Vincent Cooper">
+        <div class="card-body">
+          <h5 class="card-title">Vincent Cooper</h5>
+          <p class="card-text">Dentist</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DENTIST 4  -->
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card text-center">
+        <img src="./assest/doctor-4.png" class="card-img-top" alt="Danielle Bryant">
+        <div class="card-body">
+          <h5 class="card-title">Danielle Bryant</h5>
+          <p class="card-text">Dentist</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+  <!-- DOCTOR IMAGE SECTION ENDED  -->
+
+
+  <!-- FOOTER STARTED  -->
+   
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <h5>AQUA FLOSS DENTAL CLINIC.</h5>
+              <p>
+              A dental clinic provides essential oral health care services, from routine cleanings to complex procedures like root canals. While clinics offer professional treatment and modern equipment, they may have higher costs and longer wait times, depending on location and demand.</p>
+                
+              <div class="opening-hours">
+                <i id="clock" class="fa-solid fa-clock"></i>
+                  Monday - Saturday: 9:00am - 10:00pm
+              </div>
+          </div>
+
+          <!-- Other Links -->
+          <div  class=" col-md-3">
+              <h5 class="others">Other Links</h5>
+              <ul class="links list-unstyled">
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="index.html">Home</a></li>
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="contact.html">Professional-Education</a></li>
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="patient1.html">Patient</a></li>
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="product.html">Product</a></li>
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="research1.html">Research</a></li>
+                  <li> <i class="fa-solid fa-plus"></i><a class="ankor" href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+
+          <!-- Our Services -->
+          <div class="col-md-3">
+              <h5>Our Services</h5>
+              <ul class="list-unstyled">
+                  <li> <i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Root Canal</a></li>
+                  <li><i class="fa-solid fa-folder-plus"></i><a class="ankor"  href="#">Alignment Teeth</a></li>
+                  <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Cosmetic Teeth</a></li>
+                  <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Oral Hygiene</a></li>
+                  <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Live Advisory</a></li>
+                  <li><i class="fa-solid fa-folder-plus"></i><a class="ankor" href="#">Cavity Inspection</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <p><i id="location" class="fa-solid fa-location-dot"></i> 1247/Plot No. 39, 15th Phase</p>
+              <p><i id="phone" class="fa-solid fa-phone"></i> +111-222-333-444</p>
+              <p><i id="envelope" class="fa-solid fa-envelope"></i> Abc@example.com</p>
+          </div>
+      </div>
+      </div>
+      <br>
+      <br>
+
+      <hr  />
+      <div class="row">
+          <div class="col-12 text-center">
+              <div class="social-icons">
+                  <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i id="insta" class="fab fa-instagram"></i></a>
+                  <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+              <p class="copyright">&copy; 2024 All Rights Reserved by AquaFloss Dental</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<!-- FOOTER ENDED  -->
+
+
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="scrollToTop()">
+  <i class="fa-solid fa-circle-up"></i>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>
